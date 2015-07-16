@@ -24,6 +24,9 @@
       "listen": "*"
     }
   },
+  "storage": {
+    "managed_schema": "schema.json"
+  },
   "permissions": [
     "system.display",
     "system.network",

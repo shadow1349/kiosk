@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "content": { "type": "string" },
+          "duration": { "type": "integer" },
+          "end": { "type": "string" },
+          "repetition": { "type": "string" },
+          "start": { "type": "string" }
+        }
+      }
+    }
+  }
+}
