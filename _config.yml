@@ -2,7 +2,7 @@
 title: Kiosk by ZEBRADOG
 email: support@zebradog.com
 description: 
-baseurl: "/kiosk/" # the subpath of your site, e.g. /blog/
+baseurl: "/kiosk" # the subpath of your site, e.g. /blog/
 url: "https://code.zebradog.com/kiosk" # the base hostname & protocol for your site
 
 # Build settings

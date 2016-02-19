@@ -2,6 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import "normalize", "skeleton","font-din-mittelschrift";
+body,html{
+  font-family:"Helvetica",sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: "DIN",sans-serif;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "normalize", "skeleton";
+
