@@ -1,0 +1,11 @@
+# Site settings
+title: Kiosk by ZEBRADOG
+email: support@zebradog.com
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://code.zebradog.com/kiosk" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
