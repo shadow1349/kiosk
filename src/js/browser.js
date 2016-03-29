@@ -178,6 +178,24 @@ $(function(){
      .on('consolemessage',function(e){
        if(e.originalEvent.message == 'kiosk:active') active();
      })
+     .on('newwindow',function(e){
+       e.preventDefault();
+       //https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/btoa#Unicode_strings
+       var hash = window.btoa(escape(encodeURIComponent(e.originalEvent.targetUrl)));
+       chrome.app.window.create('./windows/popup.html#'+hash,{
+         width: e.originalEvent.initialWidth,
+         height: e.originalEvent.initialHeight,
+         state: 'normal',
+         resizable: true,
+         focused: true,
+         frame: 'chrome'
+       },function(w){
+         console.log('popup opened',w);
+        //var $popupWebview = $(w.contentWindow.document.querySelector('#popup'));
+        //$popupWebview.attr('src',oe.targetUrl);
+        //console.log('pop',w.contentWindow.document,w.contentWindow.document.querySelector('#popup'),$popupWebview,$popupWebview.attr('src'));
+       });
+     })
      .on('permissionrequest',function(e){
        if(e.originalEvent.permission === 'media') {
          e.preventDefault();
