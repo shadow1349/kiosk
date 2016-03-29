@@ -93,12 +93,6 @@ Patches and new features are released at our convenience. If you need a bug fix 
 
 Pull requests are welcome.
 
-##Known Limitations
-
-- [Remote management is inaccessible on ChromeOS.](https://github.com/zebradog/kiosk/issues/14)
-- [Content URLs must be public. (http:// or https://)](https://github.com/zebradog/kiosk/issues/9)
-- [OSX menu bar will show on hover.](https://github.com/zebradog/kiosk/issues/41)
-
 ##Changelog
 
 - v5.7.0
