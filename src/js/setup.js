@@ -1,5 +1,12 @@
 var DEFAULT_SCHEDULE_POLL_INTERVAL = 15; //minutes
 
+  /*This will enable you to exit using CTRL + X from the admin page only!*/
+ $(document).keydown(function(e){
+   if(e.which == 88 && e.ctrlKey) {
+     window.close();
+   }
+ });
+
 $(function(){
   chrome.storage.local.get(null,function(data){
     chrome.system.network.getNetworkInterfaces(function(interfaces) {
