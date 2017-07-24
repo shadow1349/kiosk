@@ -9,13 +9,6 @@ $(function(){
      window.close();
    }
  });
-
-   /*This will enable you to minimize the window using CTRL + I from the admin page only!*/
- $(document).keydown(function(e){
-   if(e.which == 73 && e.ctrlKey) {
-     window.minimize();
-   }
- });
   
  
   chrome.storage.local.get(null,function(data){
