@@ -1,5 +1,8 @@
 var DEFAULT_SCHEDULE_POLL_INTERVAL = 15; //minutes
 
+
+
+$(function(){
   /*This will enable you to exit using CTRL + X from the admin page only!*/
  $(document).keydown(function(e){
    if(e.which == 88 && e.ctrlKey) {
@@ -7,7 +10,14 @@ var DEFAULT_SCHEDULE_POLL_INTERVAL = 15; //minutes
    }
  });
 
-$(function(){
+   /*This will enable you to minimize the window using CTRL + W from the admin page only!*/
+ $(document).keydown(function(e){
+   if(e.which == 87 && e.ctrlKey) {
+     window.minimize();
+   }
+ });
+  
+ 
   chrome.storage.local.get(null,function(data){
     chrome.system.network.getNetworkInterfaces(function(interfaces) {
 
