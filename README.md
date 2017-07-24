@@ -1,12 +1,10 @@
-<a target="_blank" href="https://chrome.google.com/webstore/detail/kiosk/afhcomalholahplbjhnmahkoekoijban">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this application from the Chrome Web Store")</a>
-
 # Chrome Kiosk
 
 Basic kiosk packaged application. Allows any URL to be loaded as a fullscreen kiosk in Google Chrome or Chrome OS, also disables device sleep mode while app is running.
 
 ## Release Notifications
 
-Interested in being notified prior to a new release of the Kiosk app? We will be publishing notification email one week prior to any new releases to allow time for final testing and debugging. You can [sign up here](http://eepurl.com/cIylnv).
+
 
 ## Features
 
@@ -109,6 +107,9 @@ Pull requests are welcome.
 - [OSX menu bar will show on hover.](https://github.com/matt-cook/kiosk/issues/41)
 
 ## Changelog
+
+-v5.12.1
+  - New feature: CTRL + X will exit the application only from the admin setup
 
 - v5.12.0
   - New feature: Navigation bar (home/back/refresh)
