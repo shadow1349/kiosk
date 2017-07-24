@@ -108,7 +108,7 @@ Pull requests are welcome.
 
 ## Changelog
 
--v5.12.1
+- v5.12.1
   - New feature: CTRL + X will exit the application only from the admin setup
 
 - v5.12.0
