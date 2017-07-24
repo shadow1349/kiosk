@@ -10,9 +10,9 @@ $(function(){
    }
  });
 
-   /*This will enable you to minimize the window using CTRL + W from the admin page only!*/
+   /*This will enable you to minimize the window using CTRL + I from the admin page only!*/
  $(document).keydown(function(e){
-   if(e.which == 87 && e.ctrlKey) {
+   if(e.which == 73 && e.ctrlKey) {
      window.minimize();
    }
  });
